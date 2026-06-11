@@ -14,17 +14,22 @@
 
     <section class="hero">
       <div class="hero-content">
+        <div class="language-switcher">
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+          <button onclick="setLanguage('fi')" class="lang-btn">FI</button>
+        </div>
+
         <p class="eyebrow">Based in Tampere, Finland</p>
 
         <h1>Margarita Nefedova</h1>
 
         <p class="subtitle">
-          Project Coordination • Operations • IT Processes
+          Project Coordination • Operations • Digital Projects
         </p>
 
         <p class="hero-text">
-          I help organize projects, support teams, improve processes,
-          and connect people, communication, and technology.
+          Experienced in coordinating projects, improving processes, 
+          and supporting collaboration across technical, operational, and business teams.
         </p>
 
         <div class="hero-buttons">
@@ -51,33 +56,26 @@
 
 
     <section>
-      <h2>About Me</h2>
-      <p>
-        I am a Finland-based professional with experience in project coordination,
-        operations, AI tool documentation, and customer-oriented work environments.
-        I enjoy organizing processes, supporting teams, improving workflows,
-        and working in international environments.
+      <h2 id="about-title">About Me</h2>
+      <p id="about-text">
+        I am a project and process-oriented professional with nearly three years of experience in an IT company environment. 
+        My background combines project coordination, process development, and operational 
+        support with experience in AI-related solutions, CRM systems, documentation, and stakeholder communication.
       </p>
       <p>
-        Currently, I am completing my Master's studies in Tampere while building
-        experience in IT-related coordination and operational roles.
-      </p>
-    </section>
-
-    <section>
-      <h2>What I’m Looking For</h2>
-      <p>
-        I am interested in roles related to project coordination, operations,
-        team support, process management, and IT environments.
+        Through both professional experience and formal training, I have developed knowledge of Agile, Scrum, and Lean principles,
+         which I apply when planning, coordinating, and supporting projects. I also have experience in sales, 
+         marketing, and business operations, giving me a broad understanding of how technical and business functions work together.
       </p>
       <p>
-        I am especially interested in positions such as Project Coordinator,
-        Operations Coordinator, Team Coordinator, IT Coordinator,
-        Project Manager Assistant, or similar organizational roles.
+        I enjoy working with people, coordinating activities across teams, and bringing structure to complex tasks.
+        I am open to new challenges, collaborations, and opportunities where I can contribute to successful projects,
+         efficient processes, and continuous improvement.
       </p>
     </section>
 
-    <section>
+ <section>
+
       <h2>Work Experience</h2>
 
       <div class="timeline">
@@ -162,6 +160,37 @@
     </section>
 
     <section>
+      <h2>What I Can Offer</h2>
+
+      <ul>
+        <li>Strong organizational and coordination skills</li>
+        <li>Experience working in IT and AI-related environments</li>
+        <li>Understanding of Agile, Scrum, and Lean principles</li>
+        <li>Ability to support projects, teams, and daily operations</li>
+        <li>Experience with CRM systems and process documentation</li>
+        <li>Excellent communication and stakeholder management skills</li>
+        <li>Customer-oriented mindset and problem-solving approach</li>
+        <li>Exceptional organizational skills with strong attention to detail and follow-through.</li>
+        <li>Hands-on experience with project management and collaboration tools such as Jira and Trello</li>
+        <li>Ability to build trust, create alignment, and maintain momentum across teams</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I’m Looking For</h2>
+      <p>
+        I am interested in roles related to project coordination, operations,
+        team support, process management, and IT environments.
+      </p>
+      <p>
+        I am especially interested in positions such as Project Coordinator,
+        Operations Coordinator, Team Coordinator, IT Coordinator,
+        Project Manager Assistant, or similar organizational roles.
+      </p>
+    </section>
+
+   
+    <section>
       <h2>Education</h2>
 
       <div class="card">
@@ -210,6 +239,59 @@
     </section>
 
     <section>
+      <h2>Featured Project</h2>
+
+      <div class="card">
+
+        <h3>Inhalaattorit.fi</h3>
+
+        <p class="date">
+          Project Manager & Senior Developer
+        </p>
+
+        <p>
+          Led the development of Inhalaattorit.fi, a healthcare-focused platform
+          created in collaboration with medical professionals and Tampere University.
+        </p>
+
+        <p>
+          The project supports healthcare professionals in selecting suitable
+          inhalers for patients and brings together inhaler information,
+          medication data, and educational resources into one platform.
+        </p>
+
+        <p>
+          Coordinated project work, stakeholder collaboration, communication,
+          and development activities as part of a multidisciplinary team.
+        </p>
+
+        <a href="https://www.inhalaattorit.fi" target="_blank" class="btn tertiary">
+          View Project
+        </a>
+        </div>
+    </section>
+
+        <section>
+          <h2>Recommendation</h2>
+
+          <p>
+            "Margarita demonstrated excellent project coordination skills and
+            was able to successfully collaborate with healthcare professionals,
+            researchers, and technical stakeholders throughout the project."
+          </p>
+
+          <p class="date">
+            Dr. Firstname Lastname<br>
+            Position<br>
+            Organization
+          </p>
+
+      </div>
+    </section>
+
+    
+
+    <section>
       <h2>Skills</h2>
 
       <ul class="skills">
@@ -239,7 +321,7 @@
     <section>
       <h2>Contact</h2>
       <p>Email: margarita.a.nefedova@gmail.com</p>
-      <p>LinkedIn: https://www.linkedin.com/in/margarita-nefedova-926657297/</p>
+      <p>LinkedIn: https://www.linkedin.com/in/margarita-nefedova-926657297</p>
       <p>GitHub: github.com/MargaritaNefedova</p>
     </section>
 
@@ -254,6 +336,38 @@
       2026
     </p>
   </footer>
+
+  <script>
+
+const translations = {
+
+  en: {
+    aboutTitle: "About Me",
+
+    aboutText:
+      "I am a Master's student in Software Engineering at Tampere University with nearly three years of experience in an IT company environment."
+  },
+
+  fi: {
+    aboutTitle: "Minusta",
+
+    aboutText:
+      "Opiskelen ohjelmistotekniikan maisteriksi Tampereen yliopistossa ja minulla on lähes kolmen vuoden kokemus IT-yritysympäristöstä."
+  }
+
+};
+
+function setLanguage(lang) {
+
+  document.getElementById("about-title").textContent =
+    translations[lang].aboutTitle;
+
+  document.getElementById("about-text").textContent =
+    translations[lang].aboutText;
+
+}
+
+</script> 
 
 </body>
 

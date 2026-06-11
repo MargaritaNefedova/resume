@@ -326,3 +326,25 @@ section:hover {
   box-shadow:
     0 14px 30px rgba(0, 0, 0, 0.07);
 }
+
+.language-switcher {
+  margin-bottom: 20px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #8b5e3c;
+
+  margin-right: 10px;
+}
+
+.lang-btn:hover {
+  text-decoration: underline;
+}
