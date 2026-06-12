@@ -238,7 +238,7 @@ section:hover {
 
 .btn.tertiary:hover {
   box-shadow:
-    0 0 24px rgba(31, 41, 51, 0.35);
+    0 0 24px rgba(168, 158, 115, 0.35);
 }
 
 .footer {
@@ -347,4 +347,70 @@ section:hover {
 
 .lang-btn:hover {
   text-decoration: underline;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  border: 1px solid #c9a27e;
+  border-radius: 8px;
+
+  background: #faf7f3;
+  color: #8b5e3c;
+
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  background: #f3ebe2;
+}
+
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: white;
+  border: none;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 780;
+
+  color: #8b5e3c;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.active-lang {
+  background: #8b5e3c;
+  color: white;
+}
+
+.lang-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }

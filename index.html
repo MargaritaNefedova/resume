@@ -11,13 +11,14 @@
 
 <body>
   <main class="container">
+    <div class="language-switcher">
+          <button onclick="setLanguage('en')" id="btn-en" class="lang-btn active-lang">EN</button>
+          <button onclick="setLanguage('fi')" id="btn-fi" class="lang-btn">FI</button>
+        </div>
+    <div id="content-en">
 
     <section class="hero">
       <div class="hero-content">
-        <div class="language-switcher">
-          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
-          <button onclick="setLanguage('fi')" class="lang-btn">FI</button>
-        </div>
 
         <p class="eyebrow">Based in Tampere, Finland</p>
 
@@ -232,8 +233,10 @@
           and development activities as part of a multidisciplinary team.
         </p>
 
-        <a href="https://www.inhalaattorit.fi" target="_blank" class="btn tertiary">
-          View Project
+        <a href="https://www.inhalaattorit.fi" target="_blank" class="project-btn">
+        
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Visit Project
         </a>
         </div>
 
@@ -265,7 +268,6 @@
            I enjoy seasonal sports as well as quieter activities such as reading, knitting, and other creative crafts.
           </p>
 
-      </div>
     </section>
 
 
@@ -276,7 +278,7 @@
         <li>Finnish — Native</li>
         <li>English — Working Proficiency</li>
         <li>Russian — Native</li>
-        <li>Swidish — Mandatory</li>
+        <li>Swidish — Intermediate</li>
       </ul>
     </section>
 
@@ -287,8 +289,295 @@
       <p>LinkedIn: https://www.linkedin.com/in/margarita-nefedova-926657297</p>
       <p>GitHub: github.com/MargaritaNefedova</p>
     </section>
+  </div>
 
+
+
+
+
+
+  <div id="content-fi" style="display:none;">
+    <section class="hero">
+      <div class="hero-content">
+
+        <p class="eyebrow">Tampere, Suomi</p>
+
+        <h1>Margarita Nefedova</h1>
+
+        <p class="subtitle">
+          Projektihallinta • Prosessit • Operatiivinen toiminta
+        </p>
+
+        <p class="hero-text">
+          Tuloshakuinen projektipäällikkö, jolla on lähes kolmen vuoden kokemus IT-alalta. Kokemusta ja ymmärrystä löytyy projektien koordinoinnista, prosessien kehittämisestä sekä yhteistyön tukemisesta teknisten, 
+          operatiivisten ja liiketoimintatiimien välillä.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="mailto:margarita.a.nefedova@gmail.com" class="btn primary">
+            <i class="fa-solid fa-envelope"></i>
+              Sähköposti 
+          </a>
+
+          <a href="https://www.linkedin.com/in/margarita-nefedova-926657297/" class="btn secondary" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+
+          <a href="cv.pdf" class="btn tertiary" target="_blank">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+            Lataa CV
+          </a>
+        </div>
+      </div>
+
+      <img src="photo.jpeg" alt="Margarita Nefedova" class="profile-photo" />
+    </section>
+
+
+    <section>
+      <h2 id="about-title">Minusta</h2>
+      <p id="about-text">
+        Olen projekti- ja prosessilähtöinen ammattilainen, jolla on lähes kolmen vuoden kokemus IT-yritysympäristöstä. 
+        Taustani yhdistää projektikoordinoinnin, prosessien kehittämisen ja operatiivisen tuen sekä kokemuksen tekoälyratkaisuista, 
+        CRM-järjestelmistä, dokumentaatiosta ja sidosryhmäviestinnästä.
+
+      </p>
+      <p>
+        Työkokemuksen ja koulutuksen kautta olen perehtynyt Agile-, Scrum- ja Lean-menetelmiin, joita hyödynnän projektien suunnittelussa, 
+        koordinoinnissa ja toteutuksen tukemisessa. Minulla on myös kokemusta myynnistä, markkinoinnista ja liiketoiminnan 
+        operatiivisesta toiminnasta, mikä on antanut laajan ymmärryksen teknisten ja liiketoiminnallisten toimintojen yhteistyöstä.
+      </p>
+      <p>
+        Pidän työskentelystä ihmisten kanssa, tiimien välisen yhteistyön koordinoinnista sekä rakenteen tuomisesta monimutkaisiin 
+        kokonaisuuksiin. Olen avoin uusille haasteille, yhteistyömahdollisuuksille ja projekteille, joissa voin edistää onnistuneita 
+        hankkeita, tehokkaita prosesseja ja jatkuvaa kehitystä.
+      </p>
+    </section>
+
+ <section>
+
+      <h2>Työkokemus</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <h3>Myynnin ja markkinoinnin asiantuntija</h3>
+            <p class="date">Softlandia Ltd. · Toukokuu 2025 — Nykyhetki · Tampere, Suomi</p>
+
+            <p>
+              Osallistuin projekteihin, ylläpidin CRM-prosesseja ja toteutin
+               markkinointiin liittyviä tehtäviä IT-yritysympäristössä. Kirjoitan lisäksi pro gradu -tutkielmaani 
+               yritykselle yhteistyössä työelämän tarpeiden kanssa.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <h3>IT- ja markkinointiassistentti</h3>
+            <p class="date">Softlandia Ltd. · Maaliskuu 2024 — Toukokuu 2025 · Tampere, Suomi</p>
+            <p>
+              Tuin operatiivista toimintaa, viestintää, sisällöntuotantoa, asiakastiedon 
+              hallintaa sekä erilaisia liiketoiminnan ja IT:n päivittäisiä tehtäviä.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <h3>Harjoittelija</h3>
+            <p class="date">Softlandia Ltd. · Tammikuu 2024 — Maaliskuu 2024 · Tampere, Suomi</p>
+            <p>
+              Osallistuin Softlandia AI -työkalun testaukseen, dokumentointiin ja kehittämisen tukemiseen. 
+              Laadin käyttöohjeita ja koulutusmateriaaleja sekä testasin ja automatisoin prompteja 
+              käyttäjäkokemuksen parantamiseksi. Lisäksi osallistuin markkinoinnin 
+              tukitehtäviin ja työkalun esittelyyn osana tekoälyyn keskittyvää ohjelmistoympäristöä.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <h3>Asiakaspalvelu ja ravintola-alantyöt</h3>
+            <p class="date">2015 — 2026 · Tampere ja Pirkkala, Suomi</p>
+
+            <p>
+              Olen työskennellyt ravintola- ja asiakaspalvelualalla yli kymmenen vuoden ajan 
+              opintojeni ohessa. Työ on kehittänyt paineensietokykyäni, vuorovaikutus- ja 
+              asiakaspalvelutaitojani sekä kykyäni hallita useita tehtäviä samanaikaisesti. 
+              Lisäksi minulla on kokemusta tapahtumien järjestämisestä ja toiminnan kehittämisestä.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+ <section>
+      <h2>Koulutus</h2>
+
+      <div class="card">
+        <h3>Tampereen yliopisto</h3>
+
+        <p class="date">
+          Maisterintutkinto · Ohjelmistot
+          <br>
+          Tammikuu 2026 — Kesäkuu 2027
+        </p>
+
+        <p>
+          Suoritan parhaillani ohjelmistotekniikan maisteriopintoja. Opintojen 
+          painopisteenä ovat tuotekehitys, prosessien hallinta, ohjelmistoprojektien 
+          johtaminen sekä nykyaikaiset ohjelmistokehitysmenetelmät.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Tampereen yliopisto</h3>
+
+        <p class="date">
+          Kandidaatin tutkinto · Tietojenkäsittelytiede
+          <br>
+          Elokuu 2022 — Joulukuu 2025
+        </p>
+
+        <p>
+          Opintoni antoivat vahvan perustan tietojenkäsittelytieteeseen, ohjelmistokehitykseen, 
+          tietokantoihin, käytettävyyteen ja tietojärjestelmien suunnitteluun. Sivuaineopinnoissani 
+          olen perehtynyt kauppatieteeseen, markkinointiin sekä 
+          tietojohtamisen ja hallintotieteiden kokonaisuuksiin.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Tampereen klassillinen lukio</h3>
+
+        <p class="date">
+          Lukio · Luonnontiedelinja
+          <br>
+          2015 — 2018
+        </p>
+
+        <p>
+          Valmistuin lukiosta luonnontiedelinjalta.
+        </p>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Tarjoan teille</h2>
+
+      <ul>
+
+        <li>Vahvat organisointitaidot sekä huolellinen ja tavoitteellinen työote</li>
+        <li>Kyky rakentaa luottamusta, yhdistää eri osapuolia yhteisten tavoitteiden saavuttamiseksi ja ylläpitää projektien etenemistä.</li>
+        <li>Asiakaslähtöisyys ja vahvat ongelmanratkaisutaidot.</li>
+        <li>Erinomaiset vuorovaikutus- ja viestintätaidot</li>
+        <li>Kokemusta erilaisten ohjelmistojen, digitaalisten työkalujen ja järjestelmien käytöstä.</li>
+        <li>Ymmärrys ketteristä projektinhallinta- ja prosessikehitysmenetelmistä (Agile, Scrum, Lean).</li>
+        <li>Kokemusta CRM-järjestelmistä, projektinhallinta- ja yhteistyötyökaluista sekä dokumentaation laatimisesta.</li>
+        
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>Keskeiset projektit</h2>
+
+      <div class="card">
+
+        <h3>Terveydenhuollon digitaalinen palvelualusta</h3>
+
+        <p class="date">
+          Projektipäällikkö ja Senior Developer, 2026
+        </p>
+
+        <p>
+          oimin projektipäällikkönä neljä kuukautta kestäneessä projektissa, 
+          joka toteutettiin yhteistyössä terveydenhuollon ammattilaisten ja 
+          Tampereen yliopiston kanssa. Vastasin projektin suunnittelusta, 
+          sidosryhmäyhteistyöstä, budjetin seurannasta, riskienhallinnasta, 
+          tehtävien koordinoinnista, dokumentaatiosta sekä projektin onnistuneesta 
+          läpiviennistä. Projektin johtamisen lisäksi osallistuin testaukseen 
+          sekä käyttöliittymä- ja käyttökokemussuunnitteluun (UI/UX).
+        </p>
+
+        <p>
+          Projekti sai näkyvyyttä useissa medioissa, mukaan lukien lääketieteen alan julkaisuissa sekä Tampereen yliopiston viestintäkanavissa.
+        </p>
+
+        <p>
+          Projektin asiakas toimii pyydettäessä suosittelijanani.
+        </p>
+
+        <a href="https://www.inhalaattorit.fi" target="_blank" class="project-btn">
+        
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Näytä projekti
+        </a>
+        </div>
+
+        <div class="card">
+            <h3>Kitsain</h3>
+
+            <p class="date">
+               UI/UX Suunnittelija & Junior Developer, 2023
+            </p>
+
+            <p>
+              Toimin junior developerina kuuden hengen ohjelmistokehitystiimissä, jossa kehitimme 
+              verkkosovellusta ruokahävikin vähentämiseksi. Sovellus mahdollisti alennustuotteiden 
+              etsimisen ja lisäämisen tietokantaan sekä tuotetietojen hakemisen viivakoodin avulla. 
+              Vastasin käyttöliittymä- ja käyttökokemussuunnittelusta (UI/UX) sekä rautalankamallien 
+              ja käyttöliittymäluonnosten laatimisesta.
+            </p>
+        </div>
+    </section>
+
+        <section>
+          <h2>Harrastukset</h2>
+
+          <p>
+          Vapaa-ajallani suosin aktiivista ajanveitettä. Tanssi on yksi rakkaimmista harrastuksistani. Harrastan paritansseja,
+          kuten lavatansseja, swing-tansseja ja salsaa, sekä erilaisia soolotansseja. Viimeisimpiä kokeilujani ovat olleet reggaeton ja tankotanssi.
+          Pidän myös liikunnasta yleisesti ja viihdyn luonnossa esimerkiksi vaelluksen ja patikoinnin parissa. Kesäisin teen road trippejä uusiin 
+          kohteisiin ja tanssitapahtumiin ympäri Suomea. Talvisin nautin neulomisesta, lukemisesta, askartelusta sekä erilaisista talviurheilulajeista.
+          </p>
+    </section>
+
+
+    <section>
+      <h2>Kielitaito</h2>
+
+      <ul class="skills">
+        <li>Suomi — Erinomainen</li>
+        <li>Englanti — Hyvä</li>
+        <li>Venäjä — Erinomainen</li>
+        <li>Ruotsi — Perus taso</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Yhteystiedot</h2>
+      <p>Sähköposti: margarita.a.nefedova@gmail.com</p>
+      <p>Puhelinnumero: +358442363690</p>
+      <p>LinkedIn: https://www.linkedin.com/in/margarita-nefedova-926657297</p>
+      <p>GitHub: github.com/MargaritaNefedova</p>
+    </section>
+  </div>
   </main>
+  
 
   <footer class="footer">
     <p>
@@ -300,37 +589,39 @@
     </p>
   </footer>
 
+
+
+
   <script>
 
-const translations = {
+    function setLanguage(lang) {
 
-  en: {
-    aboutTitle: "About Me",
+  const english = document.getElementById("content-en");
+  const finnish = document.getElementById("content-fi");
 
-    aboutText:
-      "I am a Master's student in Software Engineering at Tampere University with nearly three years of experience in an IT company environment."
-  },
+  const btnEn = document.getElementById("btn-en");
+  const btnFi = document.getElementById("btn-fi");
 
-  fi: {
-    aboutTitle: "Minusta",
+  if (lang === "fi") {
 
-    aboutText:
-      "Opiskelen ohjelmistotekniikan maisteriksi Tampereen yliopistossa ja minulla on lähes kolmen vuoden kokemus IT-yritysympäristöstä."
+    english.style.display = "none";
+    finnish.style.display = "block";
+
+    btnFi.classList.add("active-lang");
+    btnEn.classList.remove("active-lang");
+
+  } else {
+
+    english.style.display = "block";
+    finnish.style.display = "none";
+
+    btnEn.classList.add("active-lang");
+    btnFi.classList.remove("active-lang");
+
   }
-
-};
-
-function setLanguage(lang) {
-
-  document.getElementById("about-title").textContent =
-    translations[lang].aboutTitle;
-
-  document.getElementById("about-text").textContent =
-    translations[lang].aboutText;
-
 }
 
-</script> 
+</script>
 
 </body>
 
